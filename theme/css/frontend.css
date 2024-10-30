@@ -1,0 +1,144 @@
+/*
+=== Plugin Name: Hearty Social Light
+frontend CSS - main CSS for the plugin.
+*/
+
+/* reset
+====================================================================== */
+
+div[id^="heartysociallight"] a,
+div[id*=" heartysociallight"] a,
+div[id^="heartysociallight"] a:hover,
+div[id*=" heartysociallight"] a:hover,
+div[id^="heartysociallight"] a:focus,
+div[id*=" heartysociallight"] a:focus {
+  text-decoration: none!important;
+}
+
+/* layout
+====================================================================== */
+
+div[id^="heartysociallight"] a,
+div[id*=" heartysociallight"] a {
+  float: left;
+}
+div[id^="heartysociallight"] a:hover,
+div[id*=" heartysociallight"] a:hover,
+div[id^="heartysociallight"] a:active,
+div[id*=" heartysociallight"] a:active,
+div[id^="heartysociallight"] a:focus,
+div[id*=" heartysociallight"] a:focus {
+  opacity: 0.8;
+  background-color: transparent;
+}
+
+/* content
+====================================================================== */
+
+/* icon */
+li[id^="heartysociallight-icon"],
+li[id*=" heartysociallight-icon"] {
+  list-style: none;
+  float: left;
+  margin: 0 5px;
+}
+li[id^="heartysociallight-icon"] .heartysociallight,
+li[id*=" heartysociallight-icon"] .heartysociallight {
+  position: relative;
+  display: inline-block;
+  width: 2em;
+  height: 2em;
+  line-height: 2em;
+  vertical-align: middle;
+}
+li[id^="heartysociallight-icon"] i,
+li[id*=" heartysociallight-icon"] i {
+  float: left;
+  width: 100%;
+  padding: 50% 0;
+  line-height: 0;
+  text-align: center;
+}
+li[id^="heartysociallight-icon"]:after,
+li[id*=" heartysociallight-icon"]:after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 0;
+  padding-bottom: 100%;
+}
+
+/* list float */
+ul#heartysociallight-list {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+ul#heartysociallight-list.heartysociallight-left {
+  float: left;
+}
+ul#heartysociallight-list.heartysociallight-center {
+  display: table;
+  margin: 0 auto;
+  float: none;
+}
+ul#heartysociallight-list.heartysociallight-right {
+  float: right;
+}
+.pull-right li[id^="heartysociallight-icon"]:last-child,
+.pull-right li[id*=" heartysociallight-icon"]:last-child,
+.hrty-pull-right li[id^="heartysociallight-icon"]:last-child,
+.hrty-pull-right li[id*=" heartysociallight-icon"]:last-child {
+  margin-right: 0;
+}
+.pull-left li[id^="heartysociallight-icon"]:first-child,
+.pull-left li[id*=" heartysociallight-icon"]:first-child,
+.hrty-pull-left li[id^="heartysociallight-icon"]:first-child,
+.hrty-pull-left li[id*=" heartysociallight-icon"]:first-child {
+  margin-left: 0;
+}
+
+  /* small devices (landscape phones, 576px and up) */
+  @media (min-width: 576px) {
+
+    .heartysociallight-fixed-desktop-left {
+      position: fixed;
+      left: 0!important;
+      width: auto!important;
+      z-index: 99999;
+    }
+    .heartysociallight-fixed-desktop-right {
+      position: fixed;
+      right: 0!important;
+      width: auto!important;
+      z-index: 99999;
+    }
+    .heartysociallight-fixed-desktop-left ul li, .heartysociallight-fixed-desktop-right ul li {
+      margin-bottom: 5px!important;
+      float: none!important;
+    }
+
+  }
+
+  /* extra small devices (portrait phones, less than 576px) */
+  @media (max-width: 575.98px) {
+
+    .heartysociallight-fixed-mobile {
+      position: fixed;
+      width: 100%;
+      z-index: 99999;
+      top: auto !important;
+      left: 0 !important;
+      right: 0 !important;
+    }
+    .heartysociallight-fixed-mobile ul {
+      width: 100%;
+      text-align: center;
+    }
+    .heartysociallight-fixed-mobile ul li {
+      display: inline-block !important;
+      float: none !important;
+    }
+
+  }
+
